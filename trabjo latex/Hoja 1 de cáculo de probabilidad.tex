@@ -1,0 +1,203 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{times}
+\usepackage[ansinew]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[right=2cm, left=2cm, top=2cm, bottom=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{enumerate}
+\usepackage[usenames]{color}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{UNIVERSIDAD NACIONAL DE SAN CRIST\'OBAL DE HUAMANGA}\\
+\vskip 0.4cm
+FACULTAD DE INGENIER\'IA DE MINAS, GEOLOG\'IA Y CIVIL\\
+DEPARTAMENTO ACADEMICO DE MATEM\'ATICA Y F\'ISICA\\
+\vskip 0.45cm
+Escuela Profesional de Ciencias F\'isico Matem\'aticas\\
+\end{center}
+\vskip 1cm
+
+
+\vskip 0.5cm
+
+\begin{center}
+
+\vskip 2cm 
+
+CURSO: C\'aculo de Probabilidades
+
+\vskip 1cm 
+
+PROFESOR: ROMERO PLASENCIA, Jackson 
+
+\vskip 1cm 
+
+ALUMNO: TITO MENDOZA , M\'aximo
+
+\vfill
+
+AYACUCHO - PER\'U\\
+2019 
+\end{center}
+
+\newpage
+\begin{enumerate}
+\item Demuestre que $\mathcal{F}$ es una $\sigma$-\'algebra de subconjuntos de si, y s\'olo si, satisface las siguientes propiedades:
+
+\begin{enumerate}[a.]
+   \item $\emptyset$ $\in$ $\mathcal{F}$
+   \item A $\in \longrightarrow A^c \in \mathcal{F}$
+   \item $A_1,A_2,A_3 \ldots \in \mathcal{F} \longrightarrow \bigcap_{n=1}^{\infty}A_n \in \mathcal{F} $\\
+ \end{enumerate}  
+  
+\textcolor{blue}{Demostraci\'on}:
+   
+\begin{enumerate}[a.]
+  \item Sabemos que $\Omega \in \mathcal{F}$ entonces su complento ${\Omega}^c \in \mathcal{F} $ es $\emptyset \in \mathcal{F}$.
+  \item A $\in \longrightarrow A^c \in \mathcal{F}$ (propiedad 2 de $\sigma$-\'algebra).
+  \item  $A_1,A_2,A_3 \ldots \in \mathcal{F}$ entonces su comlemento ${A_1}^c,{A_2}^c,{A_3}^c \ldots \in \mathcal{F}$ entonces $\bigcup_{n=1}^{\infty}{A_n}^c \in \mathcal{F} $ entonces su complemento es $\bigcup_{n=1}^{\infty}A_n \in \mathcal{F}$.
+\end{enumerate}
+\item Sea $\mathcal{F}$ una $\sigma$-\'algebra; demuestre que ${\mathcal{F}}^c$ es una $\sigma$-\'algebra definida por: $\mathcal{F}^c$ $= \left\lbrace A^c :A \in  \mathcal{F} \right\rbrace$.
+
+\textcolor{blue}{ Demostraci\'on}:
+\begin{enumerate}[a.]
+\item Si $\emptyset \in \mathcal{F}$ entonces su complemento ${\emptyset}^c \in {\mathcal{F}}^c $ entonces $\Omega \in {\mathcal{F}}^c$.
+\item $A\in \mathcal{F}$ entonces su complemento ${A}^c\in {\mathcal{F}}^c$
+\item  $A_1,A_2,A_3 \ldots \in \mathcal{F}$ entonces su comlemento  ${A_1}^c,{A_2}^c,{A_3}^c \ldots \in {\mathcal{F}}^c$ entonces $\bigcap_{n=1}^{\infty}{A_n}^c \in {\mathcal{F}}^c$  entonces su complemto es $\displaystyle\bigcup_{n=1}^{\infty}{A_n} \in {\mathcal{F}}^c$.
+\end{enumerate}
+
+\item Sea $\left\lbrace A_n\right\rbrace_{n \in N}$ la sucesi\'on de eventos, definida por:
+\begin{center}
+$A_n= A  \quad  si \quad  n= 1,3,5 \ldots$\\
+$A_n= {A}^c  \quad si \quad  n= 2,4,6 \ldots$\\
+\end{center}
+
+Determine el $\displaystyle\lim_{x \rightarrow \infty} A_n $\\
+
+\textcolor{blue}{ Demostraci\'on}:\\\\
+$\left(\displaystyle\lim_{x \rightarrow \infty} inf A_n \displaystyle\bigcup_{n=1}^{\infty}\bigcap_{k=n}^{\infty}{A_k}\right) $ = $\displaystyle\bigcup_{n=1}^{\infty}\left(A \cap A^c\right) $ =$\quad\bigcup_{\emptyset} $ =$\quad {\emptyset} $\\\\
+
+$\left(\displaystyle\lim_{x \rightarrow \infty} sup A_n \displaystyle\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty}{A_k}\right) $ = $\displaystyle\bigcap_{n=1}^{\infty}{\Omega} $ = ${\Omega}$\\\\
+\\
+como los limites\\ 
+\begin{center}
+$\displaystyle\lim_{x \rightarrow \infty} inf A_n  \neq \displaystyle\lim_{x \rightarrow \infty} sup A_n$
+\end{center}
+entonces el limite $\displaystyle\lim_{x \rightarrow \infty}A_n$ no existe \\\\
+\item Sea $\left\lbrace A_n\right\rbrace_{n \in N}$ la sucesi\'on de eventos, definida por:
+ 
+\begin{center}
+$A_n= \left[\frac{-1}{n},0\right] \quad si \quad  n= 1,3,5 \ldots$\\
+$A_n= \left[0,\frac{1}{n}\right] \quad si \quad  n= 2,4,6 \ldots$\\
+\end{center}
+Determine el $\displaystyle\lim_{x \rightarrow \infty} A_n $\\\\
+\textcolor{blue}{ Demostraci\'on}:\\
+
+$\displaystyle\lim_{x \rightarrow \infty}inf A_n\quad$=$\quad\displaystyle\bigcup_{n=1}^{\infty}\bigcap_{k=n}^{\infty}{A_k}\quad$=$\quad\displaystyle\bigcup_{n=1}^{\infty}\left(\bigcap_{k=1}^{\infty}{A_k}\bigcap_{k=2}^{\infty}{A_k}\ldots\right)\quad$=$\quad\displaystyle\bigcup_{n=1}^{\infty}_\left\lbrace 0\right\rbrace\quad$=$\quad\left\lbrace 0\right\rbrace$\\
+$\displaystyle\lim_{x \rightarrow \infty}sup A_n\quad$=$\quad\displaystyle\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty}{A_k}$
+\item Sean $A_1,A_2,A_3 \ldots$ eventos aleatorios, demuestre:\\
+\begin{enumerate}[a.]
+\item $P\left(\displaystyle\bigcup_{k=1}^{n}{A_k}\right)\geq 1- \displaystyle\sum_{k=1}^n P\left({A_k}^c \right)$
+\item Si $P\left(A_k\right)\geq 1 - e \quad para \quad K= 1,2,3, \ldots,n$ entonces $P\left(\bigcap_{n=1}^{n} \right)\geq 1 - ne$
+\item $P\left(\displaystyle\bigcup_{k=1}^{\infty}{A_k}\right)\geq 1 -   \displaystyle\sum_{k=1}^n P\left({A_k}^c \right)$
+\end{enumerate}
+\textcolor{blue}{ Demostraci\'on}:\\\\
+\textcolor{blue}{ soluci\'on\quad\textbf{a}}\\\\
+
+$P\left(\displaystyle\bigcap_{k=1}^{n}{A_k}\right)\geq 1- \displaystyle\sum_{k=1}^n P\left({A_k}^c \right)$\\
+sabemos\\\\
+$P\left(\displaystyle\bigcap_{k=1}^{n}{A_k}\right)=\quad 1-P\left(\displaystyle\bigcup_{k=1}^{n}{A_k}\right)\geq 1-\displaystyle\sum_{k=1}^n P\left({A_k}^c\right)$\\\\
+\\\\\\\\\\\\\\\\
+\textcolor{blue}{ soluci\'on\quad\textbf{b}}\\
+\begin{equation*}
+\begin{aligned}
+P\left({A_k}\right)&\geq 1-e\\
+e &\geq1-P\left({A_k}\right)\\
+\prod_{i=1}^{n}e &\geq\prod_{i=1}^{n}\left({A_k}\right)^c\\
+ne &\geq\prod_{i=1}^{n}\left(1-P\left({A_k}\right)\right)\\
+\Rightarrow ne & \geq1-P\left(\bigcup_{i=1}^{n}{A_k}\right)\\
+\Rightarrow ne & \geq1-P\left(\bigcup_{k=1}^{n}{A_k}\right)\\
+\end{aligned}\\
+\end{equation*}
+\item Demuestre las desigualdades de Boole.
+
+\textcolor{blue}{ Demostraci\'on}:
+\begin{enumerate}[(a)]
+\item $P\left(\displaystyle\bigcup_{k=1}^{\infty}{A_k}\right)\leq   \displaystyle\sum_{k=1}^{\infty} P\left({A_k} \right)$
+\item $P\left(\displaystyle\bigcup_{k=1}^{\infty}{A_k}\right)\geq 1 -   \displaystyle\sum_{k=1}^{\infty} P\left({A_k}^c \right)$
+\end{enumerate}
+\textcolor{blue}{ soluci\'on\quad\textbf{a}}\\
+Sea $$B_n = A_n$$ 
+$B_n=A_n$-$\left(\displaystyle\bigcup_{k=1}^{n-1}{A_k}\right)$ donde  $\quad n= 2,3,4 \ldots,n$\\\\\\\\
+entonces $\left(\displaystyle\bigcup_{n=1}^{\infty}{A_n}\right)$ = $\left(\displaystyle\bigcup_{n=1}^{\infty}{B_n}\right)$ luego ;$ B_n \cap B_m \quad  si \quad n \neq m \quad luego \quad  B_n \subseteq A_m $ \\
+\\\\
+\\
+\\\\\\\\
+por tanto
+\begin{equation*}
+\begin{aligned}
+P\left(\displaystyle\bigcup_{n=1}^{\infty}{A_n}\right)=P\left(\displaystyle\bigcup_{n=1}^{\infty}{B_n}\right)\\ 
+=\displaystyle\sum_{n=1}^{\infty} P\left({B_n}\right)\\
+\leq\displaystyle\sum_{n=1}^{\infty} P\left({A_n} \right)
+\end{aligned}\\
+\end{equation*}
+\textcolor{blue}{ soluci\'on\quad\textbf{b}}\\
+\begin{equation*}
+\begin{aligned}
+P\left(\displaystyle\bigcap_{n=1}^{\infty}{A_n}\right)= 1 - P\left(\displaystyle\bigcup_{n=1}^{\infty}{A_n}^c\right)\\
+\geq 1 - \displaystyle\sum_{n=1}^{\infty} P\left({A_n}^c \right)
+\end{aligned}
+\end{equation*}\\
+\item Sea $\left\lbrace A_n\right\rbrace_{n \in N}$ una sucesi\'on de eventos, demuestre que:
+\begin{enumerate}[a.]
+\item $\left(\displaystyle\lim_{x \rightarrow \infty} inf A_n\right)^c \quad = \quad \displaystyle\lim_{x \rightarrow \infty} sup {A_n}^c $
+\item $\left(\displaystyle\lim_{x \rightarrow \infty} sup A_n\right)^c \quad = \quad \displaystyle\lim_{x \rightarrow \infty} inf {A_n}^c $
+\item $P\left(\displaystyle\lim_{x \rightarrow \infty} inf A_n\right) \quad = \quad 1 - P\left(\displaystyle\lim_{x \rightarrow \infty} sup {A_n}^c\right)$
+\end{enumerate}
+\textcolor{blue}{ Demostraci\'on}:\\\\
+\textcolor{blue}{ soluci\'on\quad\textbf{a}}\\
+\begin{equation*}
+\begin{aligned}
+\left(\displaystyle\lim_{x \rightarrow \infty} inf A_n\right)^c\quad=\displaystyle\lim_{x \rightarrow \infty} sup {A_n}^c\\
+=\left(\displaystyle\bigcup_{n=1}^{\infty}\bigcap_{k=n}^{\infty}{A_k}\right)^c\\
+=\displaystyle\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty}{A_k}^c\\
+=\displaystyle\lim_{x \rightarrow \infty} sup {A_n}^c
+\end{aligned}
+\end{equation*}\\\\
+\\\\\\\\\\\\
+\textcolor{blue}{ soluci\'on\quad\textbf{b}}\\
+\begin{equation*}
+\begin{aligned}
+\left(\displaystyle\lim_{x \rightarrow \infty}sup A_n\right)^c\quad=\displaystyle\lim_{x \rightarrow \infty}inf {A_n}^c\\
+\quad=\left(\displaystyle\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty}{A_k}\right)^c\\
+=\displaystyle\bigcup_{n=1}^{\infty}\bigcap_{k=n}^{\infty}{A_k}^c\\
+=\displaystyle\lim_{x \rightarrow \infty}inf {A_n}^c
+\end{aligned}
+\end{equation*}\\\\
+\textcolor{blue}{ soluci\'on\quad\textbf{c}}\\
+\begin{equation*}
+\begin{aligned}
+P\left(\displaystyle\lim_{x \rightarrow \infty}inf A_n\right)=1-P\left(\displaystyle\lim_{x \rightarrow \infty}sup A_n\right)^c\\\\
+\left([P\displaystyle\bigcup_{n=1}^{\infty}\bigcap_{k=n}^{\infty}{A_k}]^c\right)^c
+=1-P\left(\displaystyle\bigcup_{n=1}^{\infty}\bigcap_{k=n}^{\infty}{A_k}\right)^c\\
+=1-P\left(\displaystyle\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty}{A_k}^c\right)\\\\
+=1-P\left(\displaystyle\lim_{x \rightarrow \infty}sup{A_n}^c\right)
+\end{aligned}
+\end{equation*}\\\\
+\item Encuentre las condiciones sobre los eventos $A_1$ y $A_2$ para que la siguiente suceci\'on sea convergente.
+
+\begin{center}
+ $A_n= A_1  \quad  si \quad n \quad  es \quad impar$\\
+$A_n= A_2  \quad si \quad n \quad es \quad par$\\
+ 
+\end{center}
+
+\textcolor{red}{Demostraci\'on}:
+
+
+ 
+\end{enumerate}    
+
+\end{document}
